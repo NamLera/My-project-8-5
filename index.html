@@ -4,17 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>my project 8-4</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="swiper">
-        <h2 class="swiper-title">Ремонт техники различных брендов</h2>
-        <div class="swiper-wrapper">
-            <a href="#" class="swiper-card">
-                <div class="swiper-slide"><img src="./assets/lenovo logo.svg" alt="Lenovo"></div>
-                
-            </a>
-        </div>
+    <div class="brands-section">
+        <h1 class="swiper-title">Ремонт техники различных брендов</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/lenovo logo.svg" alt="Lenovo" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/samsung logo.svg" alt="Samsung" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/iphone logo.svg" alt="iPhone" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/viewsonic logo.svg" alt="ViewSonic" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/bosch logo.svg" alt="Bosch" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/hp logo.svg" alt="HP" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/acer logo.svg" alt="Acer" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/sony logo.svg" alt="Sony" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/lenovo logo.svg" alt="Lenovo" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/samsung logo.svg" alt="Samsung" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-card">
+                        <img src="./assets/iphone logo.svg" alt="iPhone" class="swiper-card-logo">
+                        <img src="./assets/go icon.svg" alt="arrow" class="arrow">
+                    </a>
+                </div>
+            </div>
+<div class="swiper-pagination"></div>
+        </div> 
+        
+
+    <button class="expand-all" id="showAll" style="display:none">
+        <img src="./assets/expand.svg" alt="expand">Показать все
+    </button>
+    <button class="expand-all" id="hideAll" >
+        <img src="./assets/expand icon.svg" alt="expand">Скрыть
+    </button>
     </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 12,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+            spaceBetween: 12,
+            grid: { rows: 1, fill: "row" },
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            grid: { rows: 4, fill: "row" },
+        },
+        1120: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            grid: { rows: 3, fill: "row" },
+        },
+    },
+});
+</script>
 </body>
 </html>
