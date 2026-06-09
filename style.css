@@ -11,6 +11,12 @@
     font-style: normal;
 }
 
+.brands-section{
+    background-color: #F8F8F8;
+    padding: 0 20px;
+    border-top: 1px solid #D9FFF5;
+}
+
 .arrow {
     width: 40px;
     height: 40px;
@@ -19,11 +25,6 @@
 .mySwiper {
     position: relative;
     padding-bottom: 40px;
-}
-.brands-section{
-    background-color: #F8F8F8;
-    padding: 20px;
-    border-top: 1px solid #09f4b5;
 }
 
 .swiper-title {
@@ -34,12 +35,13 @@
     color: #7E7E82;
     text-transform: uppercase;
     background: linear-gradient(0.25turn, #F8F8F8, #FFFFFF);
-    padding: 15px;
-    margin: auto;
+    padding: 20px 0;
+    margin: 0;
 }
 
 .swiper-slide {
     height: auto;
+    margin-top: 20px;
 }
 .swiper-card {
     display: flex;
@@ -53,7 +55,6 @@
     border: 1px solid #EAEAEA;
     text-decoration: none;
     box-sizing: border-box;
-
 }
 .swiper-card-logo {
     align-self: center;
@@ -106,7 +107,7 @@
         font-size: 16px;
     }
     #showAll {
-    display: block;
+    display: inline-flex;
     }
 }
 
@@ -114,5 +115,8 @@
 @media (max-width: 1120px) {
     .swiper-pagination {
         display: none ;
+    }
+    #showAll {
+    display: inline-flex;
     }
 }
